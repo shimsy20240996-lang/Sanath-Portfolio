@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { Download, ArrowRight, TrendingUp } from 'lucide-react';
 import { profileData } from '../data/profileData';
+import profileImg from '../assets/profile.jpeg'; // This is where the image should go
 
 const Hero = () => {
   return (
@@ -71,10 +72,15 @@ const Hero = () => {
             <div className="relative w-80 h-80 xl:w-96 xl:h-96">
               <div className="absolute inset-0 bg-gradient-to-tr from-navy to-navy-light rounded-2xl rotate-6 shadow-2xl shadow-black/50"></div>
               <div className="absolute inset-0 bg-charcoal rounded-2xl -rotate-3 border border-gray-700 flex items-center justify-center overflow-hidden">
-                 <div className="text-center p-8">
-                   <TrendingUp size={64} className="text-gold/50 mx-auto mb-4" />
-                   <p className="text-gray-400 text-sm font-medium uppercase tracking-widest">Financial Excellence</p>
-                 </div>
+                <img 
+                  src={profileImg} 
+                  alt={profileData.name} 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = 'https://via.placeholder.com/400x400.png?text=Profile+Image+Here';
+                  }}
+                />
               </div>
             </div>
           </motion.div>
