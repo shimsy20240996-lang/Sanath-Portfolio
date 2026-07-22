@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Globe, ExternalLink, Send } from 'lucide-react';
 import { profileData } from '../data/profileData';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
@@ -15,7 +15,7 @@ const Contact = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', email: '', subject: '', message: '' });
       setTimeout(() => setSubmitted(false), 3000);
     }, 1500);
   };
@@ -104,7 +104,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 bg-transparent border border-gray-300 dark:border-gray-600 rounded-md focus:ring-navy dark:focus:ring-gold focus:border-navy dark:focus:border-gold outline-none transition-colors dark:text-white"
-                  placeholder="John Doe"
+                  placeholder="Your name"
                 />
               </div>
               
@@ -118,7 +118,21 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 bg-transparent border border-gray-300 dark:border-gray-600 rounded-md focus:ring-navy dark:focus:ring-gold focus:border-navy dark:focus:border-gold outline-none transition-colors dark:text-white"
-                  placeholder="john@example.com"
+                  placeholder="Your email"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
+                <input 
+                  type="text" 
+                  id="subject" 
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-2 bg-transparent border border-gray-300 dark:border-gray-600 rounded-md focus:ring-navy dark:focus:ring-gold focus:border-navy dark:focus:border-gold outline-none transition-colors dark:text-white"
+                  placeholder="Subject"
                 />
               </div>
               
