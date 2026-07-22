@@ -21,27 +21,6 @@ const About = () => {
               {profileData.summary}
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-            <div className="card flex items-center space-x-4">
-              <div className="bg-navy-light dark:bg-slate-700 p-3 rounded-lg text-white">
-                <Globe size={24} />
-              </div>
-              <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium uppercase">Nationality</p>
-                <p className="text-navy-dark dark:text-gray-100 font-semibold">{profileData.personalInfo.nationality}</p>
-              </div>
-            </div>
-            <div className="card flex items-center space-x-4">
-              <div className="bg-navy-light dark:bg-slate-700 p-3 rounded-lg text-white">
-                <Shield size={24} />
-              </div>
-              <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium uppercase">Status</p>
-                <p className="text-navy-dark dark:text-gray-100 font-semibold">{profileData.personalInfo.status}</p>
-              </div>
-            </div>
-          </div>
         </motion.div>
 
         <motion.div

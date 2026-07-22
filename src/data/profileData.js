@@ -9,11 +9,6 @@ export const profileData = {
     location: "Sri Lanka"
   },
   summary: "Finance professional with 10 years of diverse experience in strategic financial management, G/L control, financial reporting, analytics, and advisory. Skilled in optimizing financial systems and procedures while providing insightful consultancy to support organizational growth. Proficient in developing data-driven dashboards and financial models that enhance decision-making and align performance with business objectives.",
-  personalInfo: {
-    nationality: "Sri Lankan",
-    status: "Married",
-    age: "29"
-  },
   highlights: [
     "Finance professional with global experience across construction, mining, manufacturing, trading, and financial services.",
     "Led ERP implementation, ensuring smooth migration of financial data with zero disruptions.",
