@@ -73,14 +73,6 @@ const Header = () => {
             >
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
-            <a 
-              href={profileData.contact.portfolio} 
-              target="_blank" 
-              rel="noreferrer"
-              className="bg-gold hover:bg-gold-light text-navy-dark px-4 py-2 rounded-md font-semibold text-sm transition-colors"
-            >
-              Portfolio
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -120,14 +112,6 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            <a 
-              href={profileData.contact.portfolio} 
-              target="_blank" 
-              rel="noreferrer"
-              className="block w-full text-center mt-4 bg-gold hover:bg-gold-light text-navy-dark px-4 py-2 rounded-md font-semibold text-base transition-colors"
-            >
-              Portfolio
-            </a>
           </div>
         </div>
       )}

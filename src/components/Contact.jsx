@@ -81,15 +81,6 @@ const Contact = () => {
               </div>
             </a>
             
-            <a href={profileData.contact.portfolio} target="_blank" rel="noreferrer" className="flex items-center group">
-              <div className="bg-white dark:bg-slate-800 p-4 rounded-full shadow-sm text-navy dark:text-gray-300 group-hover:text-gold dark:group-hover:text-gold group-hover:shadow-md transition-all border dark:border-gray-700">
-                <ExternalLink size={24} />
-              </div>
-              <div className="ml-4">
-                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Portfolio</p>
-                <p className="text-navy-dark dark:text-gray-100 font-semibold group-hover:text-gold transition-colors">Novypro Profile</p>
-              </div>
-            </a>
           </div>
         </motion.div>
         

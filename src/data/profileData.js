@@ -3,11 +3,10 @@ export const profileData = {
   title: "CIMA – ACMA(UK), CGMA, MSc (Acc. & Fin), BSc",
   tagline: "Strategic Financial Management | Financial Reporting & Analytics | Advisory",
   contact: {
-    phone: "+974 77803289",
-    email: "sanathahamed@gmail.com",
-    linkedin: "https://www.linkedin.com/in/sanath-ahamed-a4884b157",
-    location: "Doha, Qatar",
-    portfolio: "https://my.novypro.com/sanath-ahamed"
+    phone: "+94 77 721 3416",
+    email: "SanathAhamad@outlook.com",
+    linkedin: "https://linkedin.com/in/sanath-ahamed-414856b3",
+    location: "Sri Lanka"
   },
   summary: "Finance professional with 10 years of diverse experience in strategic financial management, G/L control, financial reporting, analytics, and advisory. Skilled in optimizing financial systems and procedures while providing insightful consultancy to support organizational growth. Proficient in developing data-driven dashboards and financial models that enhance decision-making and align performance with business objectives.",
   personalInfo: {
