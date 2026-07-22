@@ -25,8 +25,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-container bg-slate-50">
-      <h2 className="section-title">Get In Touch</h2>
+    <section id="contact" className="section-container bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+      <h2 className="section-title dark:text-white">Get In Touch</h2>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16">
         <motion.div
@@ -35,59 +35,59 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-2xl font-bold text-navy-dark mb-6">Contact Information</h3>
-          <p className="text-gray-600 mb-8">
+          <h3 className="text-2xl font-bold text-navy-dark dark:text-white mb-6">Contact Information</h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-8">
             I am currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
           </p>
           
           <div className="space-y-6">
             <a href={`mailto:${profileData.contact.email}`} className="flex items-center group">
-              <div className="bg-white p-4 rounded-full shadow-sm text-navy group-hover:text-gold group-hover:shadow-md transition-all">
+              <div className="bg-white dark:bg-slate-800 p-4 rounded-full shadow-sm text-navy dark:text-gray-300 group-hover:text-gold dark:group-hover:text-gold group-hover:shadow-md transition-all border dark:border-gray-700">
                 <Mail size={24} />
               </div>
               <div className="ml-4">
-                <p className="text-sm text-gray-500 font-medium">Email</p>
-                <p className="text-navy-dark font-semibold group-hover:text-gold transition-colors">{profileData.contact.email}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Email</p>
+                <p className="text-navy-dark dark:text-gray-100 font-semibold group-hover:text-gold transition-colors">{profileData.contact.email}</p>
               </div>
             </a>
             
             <a href={`tel:${profileData.contact.phone.replace(/\s+/g, '')}`} className="flex items-center group">
-              <div className="bg-white p-4 rounded-full shadow-sm text-navy group-hover:text-gold group-hover:shadow-md transition-all">
+              <div className="bg-white dark:bg-slate-800 p-4 rounded-full shadow-sm text-navy dark:text-gray-300 group-hover:text-gold dark:group-hover:text-gold group-hover:shadow-md transition-all border dark:border-gray-700">
                 <Phone size={24} />
               </div>
               <div className="ml-4">
-                <p className="text-sm text-gray-500 font-medium">Phone</p>
-                <p className="text-navy-dark font-semibold group-hover:text-gold transition-colors">{profileData.contact.phone}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Phone</p>
+                <p className="text-navy-dark dark:text-gray-100 font-semibold group-hover:text-gold transition-colors">{profileData.contact.phone}</p>
               </div>
             </a>
             
             <div className="flex items-center">
-              <div className="bg-white p-4 rounded-full shadow-sm text-navy">
+              <div className="bg-white dark:bg-slate-800 p-4 rounded-full shadow-sm text-navy dark:text-gray-300 border dark:border-gray-700">
                 <MapPin size={24} />
               </div>
               <div className="ml-4">
-                <p className="text-sm text-gray-500 font-medium">Location</p>
-                <p className="text-navy-dark font-semibold">{profileData.contact.location}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Location</p>
+                <p className="text-navy-dark dark:text-gray-100 font-semibold">{profileData.contact.location}</p>
               </div>
             </div>
             
             <a href={profileData.contact.linkedin} target="_blank" rel="noreferrer" className="flex items-center group">
-              <div className="bg-white p-4 rounded-full shadow-sm text-navy group-hover:text-gold group-hover:shadow-md transition-all">
+              <div className="bg-white dark:bg-slate-800 p-4 rounded-full shadow-sm text-navy dark:text-gray-300 group-hover:text-gold dark:group-hover:text-gold group-hover:shadow-md transition-all border dark:border-gray-700">
                 <Globe size={24} />
               </div>
               <div className="ml-4">
-                <p className="text-sm text-gray-500 font-medium">LinkedIn</p>
-                <p className="text-navy-dark font-semibold group-hover:text-gold transition-colors">Connect with me</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">LinkedIn</p>
+                <p className="text-navy-dark dark:text-gray-100 font-semibold group-hover:text-gold transition-colors">Connect with me</p>
               </div>
             </a>
             
             <a href={profileData.contact.portfolio} target="_blank" rel="noreferrer" className="flex items-center group">
-              <div className="bg-white p-4 rounded-full shadow-sm text-navy group-hover:text-gold group-hover:shadow-md transition-all">
+              <div className="bg-white dark:bg-slate-800 p-4 rounded-full shadow-sm text-navy dark:text-gray-300 group-hover:text-gold dark:group-hover:text-gold group-hover:shadow-md transition-all border dark:border-gray-700">
                 <ExternalLink size={24} />
               </div>
               <div className="ml-4">
-                <p className="text-sm text-gray-500 font-medium">Portfolio</p>
-                <p className="text-navy-dark font-semibold group-hover:text-gold transition-colors">Novypro Profile</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Portfolio</p>
+                <p className="text-navy-dark dark:text-gray-100 font-semibold group-hover:text-gold transition-colors">Novypro Profile</p>
               </div>
             </a>
           </div>
@@ -99,12 +99,12 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <form onSubmit={handleSubmit} className="card bg-white p-8">
-            <h3 className="text-2xl font-bold text-navy-dark mb-6">Send Me a Message</h3>
+          <form onSubmit={handleSubmit} className="card bg-white dark:bg-slate-800 p-8">
+            <h3 className="text-2xl font-bold text-navy-dark dark:text-white mb-6">Send Me a Message</h3>
             
             <div className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
                 <input 
                   type="text" 
                   id="name" 
@@ -112,13 +112,13 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-navy focus:border-navy outline-none transition-colors"
+                  className="w-full px-4 py-2 bg-transparent border border-gray-300 dark:border-gray-600 rounded-md focus:ring-navy dark:focus:ring-gold focus:border-navy dark:focus:border-gold outline-none transition-colors dark:text-white"
                   placeholder="John Doe"
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
                 <input 
                   type="email" 
                   id="email" 
@@ -126,13 +126,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-navy focus:border-navy outline-none transition-colors"
+                  className="w-full px-4 py-2 bg-transparent border border-gray-300 dark:border-gray-600 rounded-md focus:ring-navy dark:focus:ring-gold focus:border-navy dark:focus:border-gold outline-none transition-colors dark:text-white"
                   placeholder="john@example.com"
                 />
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
                 <textarea 
                   id="message" 
                   name="message"
@@ -140,7 +140,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="4"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-navy focus:border-navy outline-none transition-colors resize-none"
+                  className="w-full px-4 py-2 bg-transparent border border-gray-300 dark:border-gray-600 rounded-md focus:ring-navy dark:focus:ring-gold focus:border-navy dark:focus:border-gold outline-none transition-colors resize-none dark:text-white"
                   placeholder="Your message here..."
                 ></textarea>
               </div>

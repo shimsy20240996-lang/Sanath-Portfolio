@@ -6,7 +6,7 @@ import { profileData } from '../data/profileData';
 const ProfessionalDevelopment = () => {
   return (
     <div className="mt-20">
-      <h3 className="text-2xl font-bold text-navy-dark mb-8 flex items-center">
+      <h3 className="text-2xl font-bold text-navy-dark dark:text-white mb-8 flex items-center">
         <span className="bg-gold w-2 h-8 mr-3 rounded-sm"></span>
         Professional Development
       </h3>
@@ -22,14 +22,14 @@ const ProfessionalDevelopment = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-slate-50 rounded-lg p-5 border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start"
+              className="bg-slate-50 dark:bg-slate-800 rounded-lg p-5 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow flex items-start"
             >
-              <div className="bg-white p-2 rounded-md shadow-sm text-navy mr-4">
+              <div className="bg-white dark:bg-slate-700 p-2 rounded-md shadow-sm text-navy dark:text-gold mr-4">
                 <BookOpen size={20} />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-800 text-sm">{title}</h4>
-                <p className="text-gold-dark text-xs font-bold mt-1 uppercase tracking-wide">{provider}</p>
+                <h4 className="font-semibold text-gray-800 dark:text-gray-200 text-sm">{title}</h4>
+                <p className="text-gold-dark dark:text-gold text-xs font-bold mt-1 uppercase tracking-wide">{provider}</p>
               </div>
             </motion.div>
           );

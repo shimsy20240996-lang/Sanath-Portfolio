@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="font-sans text-charcoal-dark bg-slate-50 min-h-screen">
+    <div className="font-sans text-charcoal-dark dark:text-gray-100 bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <Header />
       <main>
         <Hero />

@@ -14,7 +14,7 @@ const getIconForSkill = (skill) => {
 const TechnicalCompetencies = () => {
   return (
     <div className="mb-16">
-      <h3 className="text-2xl font-bold text-navy-dark mb-8 flex items-center">
+      <h3 className="text-2xl font-bold text-navy-dark dark:text-white mb-8 flex items-center">
         <span className="bg-gold w-2 h-8 mr-3 rounded-sm"></span>
         Technical Competencies
       </h3>
@@ -27,12 +27,12 @@ const TechnicalCompetencies = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            className="card flex items-center p-5 border-l-4 border-l-navy hover:border-l-gold group"
+            className="card flex items-center p-5 border-l-4 border-l-navy dark:border-l-navy-light hover:border-l-gold dark:hover:border-l-gold group"
           >
-            <div className="bg-slate-100 p-3 rounded-full text-navy-light group-hover:text-gold transition-colors">
+            <div className="bg-slate-100 dark:bg-slate-700 p-3 rounded-full text-navy-light dark:text-gray-300 group-hover:text-gold dark:group-hover:text-gold transition-colors">
               {getIconForSkill(skill)}
             </div>
-            <p className="ml-4 font-semibold text-gray-800">{skill}</p>
+            <p className="ml-4 font-semibold text-gray-800 dark:text-gray-200">{skill}</p>
           </motion.div>
         ))}
       </div>

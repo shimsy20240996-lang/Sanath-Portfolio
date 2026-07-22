@@ -6,8 +6,8 @@ import ProfessionalDevelopment from './ProfessionalDevelopment';
 
 const Education = () => {
   return (
-    <section id="education" className="section-container bg-white">
-      <h2 className="section-title">Education & Certifications</h2>
+    <section id="education" className="section-container bg-white dark:bg-slate-900 transition-colors duration-300">
+      <h2 className="section-title dark:text-white">Education & Certifications</h2>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
         {profileData.education.map((item, index) => (
@@ -30,13 +30,13 @@ const Education = () => {
             </div>
             
             <div className="flex-grow">
-              <h3 className="text-xl font-bold text-navy-dark leading-tight mb-2">
+              <h3 className="text-xl font-bold text-navy-dark dark:text-white leading-tight mb-2">
                 {item.degree}
               </h3>
-              <p className="text-gray-600 font-medium">{item.institution}</p>
+              <p className="text-gray-600 dark:text-gray-400 font-medium">{item.institution}</p>
               
               <div className="mt-4 flex items-center flex-wrap gap-3">
-                <span className="bg-gray-100 text-gray-700 text-sm font-semibold px-3 py-1 rounded-full border border-gray-200">
+                <span className="bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 text-sm font-semibold px-3 py-1 rounded-full border border-gray-200 dark:border-gray-600">
                   {item.year}
                 </span>
                 {item.grade && (

@@ -17,23 +17,23 @@ const ExperienceDetail = ({ experience, index }) => {
           className="card relative hover:-translate-y-1 transition-transform duration-300"
         >
           {/* Arrow pointing to timeline */}
-          <div className={`hidden md:block absolute top-8 w-4 h-4 bg-white border-t border-l border-gray-100 transform rotate-45 ${isEven ? '-left-2 -ml-[1px]' : '-right-2 -mr-[1px] rotate-[225deg]'}`}></div>
+          <div className={`hidden md:block absolute top-8 w-4 h-4 bg-white dark:bg-slate-800 border-t border-l border-gray-100 dark:border-gray-700 transform rotate-45 ${isEven ? '-left-2 -ml-[1px]' : '-right-2 -mr-[1px] rotate-[225deg]'}`}></div>
           
           <div className="flex flex-col mb-4">
-            <h3 className="text-xl font-bold text-navy-dark">{experience.role}</h3>
+            <h3 className="text-xl font-bold text-navy-dark dark:text-white">{experience.role}</h3>
             <div className="flex items-center text-gold font-medium mt-1 mb-2">
               <Briefcase size={16} className="mr-2" />
               <span>{experience.company}</span>
             </div>
-            <div className="flex items-center text-sm text-gray-500 bg-gray-50 w-fit px-3 py-1 rounded-full border border-gray-100">
+            <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-slate-700 w-fit px-3 py-1 rounded-full border border-gray-100 dark:border-gray-600">
               <Calendar size={14} className="mr-2" />
               <span>{experience.duration} ({experience.years})</span>
             </div>
           </div>
           
-          <ul className="space-y-2 mt-4 border-t border-gray-100 pt-4">
+          <ul className="space-y-2 mt-4 border-t border-gray-100 dark:border-gray-700 pt-4">
             {experience.responsibilities.map((task, i) => (
-              <li key={i} className="flex items-start text-gray-600 text-sm">
+              <li key={i} className="flex items-start text-gray-600 dark:text-gray-300 text-sm">
                 <ChevronRight size={16} className="text-gold flex-shrink-0 mt-0.5 mr-1" />
                 <span>{task}</span>
               </li>
@@ -44,8 +44,8 @@ const ExperienceDetail = ({ experience, index }) => {
       
       {/* Timeline center spacer */}
       <div className="hidden md:flex w-10 md:w-0 justify-center relative">
-        <div className="absolute w-1 bg-gray-200 h-full left-1/2 transform -translate-x-1/2"></div>
-        <div className="absolute top-8 w-4 h-4 rounded-full bg-gold border-4 border-white shadow left-1/2 transform -translate-x-1/2 z-10"></div>
+        <div className="absolute w-1 bg-gray-200 dark:bg-gray-700 h-full left-1/2 transform -translate-x-1/2"></div>
+        <div className="absolute top-8 w-4 h-4 rounded-full bg-gold border-4 border-white dark:border-slate-900 shadow left-1/2 transform -translate-x-1/2 z-10"></div>
       </div>
       
       {/* Empty half for layout */}
