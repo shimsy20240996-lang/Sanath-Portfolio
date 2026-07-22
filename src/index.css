@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', 'Roboto', sans-serif;
+  }
+  
+  body {
+    @apply bg-slate-50 text-charcoal-dark antialiased;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20;
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold text-navy-dark mb-12 text-center relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gold;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md border border-gray-100 p-6 hover:shadow-lg transition-shadow duration-300;
+  }
+}
